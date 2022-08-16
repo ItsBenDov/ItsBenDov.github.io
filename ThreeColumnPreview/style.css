@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;    
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.container {
+    min-width: 1000px;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 550px;
+    border-radius: 10px;
+    color: white;
+    overflow:hidden;
+}
+
+.orange-window {
+    padding: 50px;
+    background-color: hsl(30, 77%, 52%);
+}
+
+.blue-window {
+    padding: 50px;
+    background-color: hsl(185, 98%, 23%);
+}
+
+.green-window {
+    padding: 50px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+a {  
+    font-family: 'Lexend Deca', sans-serif;;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 40px;
+}
+
+.green-window a {
+    color: hsl(179, 100%, 13%);
+}
+
+.blue-window a {
+    color: hsl(185, 98%, 23%);
+}
+
+.orange-window a {
+    color: hsl(30, 77%, 52%);
+}
+
+.green-window a:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 3px solid white;
+    color: white;
+}
+
+.blue-window a:hover {
+    background-color: hsl(185, 98%, 23%);
+    border: 3px solid white;
+    color: white;
+}
+
+.orange-window a:hover {
+    background-color: hsl(30, 77%, 52%);
+    border: 3px solid white;
+    color: white;
+}
