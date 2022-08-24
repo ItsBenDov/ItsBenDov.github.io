@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed';
+    background-color: hsl(213, 44%, 95%);
+    color: white;
+}
+
+.container {
+    padding: 10em;
+    display: grid;
+    gap: 2em;
+    grid-template-areas:
+        'p p g w1'
+        'w2 dg dg w1'
+    ;
+}
+
+h2 {
+    position: relative;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.profile div {   
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.container .daniel, .jonathan, .kira, .jeanette, .patrick {
+    padding: 2em;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: relative;
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: p;
+}
+
+.jonathan {
+    background-color: hsl(219, 19%, 35%);
+    grid-area: g;
+}
+
+.kira {
+    background-color: white;
+    color: hsl(217, 11%, 33%);
+    grid-area: w1;
+    width:300px;
+}
+
+.jeanette {
+    background-color: white;
+    color: hsl(217, 11%, 33%);
+    grid-area: w2;
+
+}
+
+.patrick {
+    background-color: hsl(217, 30%, 14%);
+    grid-area: dg;
+}
+
+.bg-pattern {   /*quote*/
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        grid-template-columns: minmax(400px, 1fr);
+        grid-template-areas: 'p' 'g' 'w1' 'dg' 'w2';
+    }
+
+    .kira {
+        width: unset;
+    }
+}
